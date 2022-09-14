@@ -1,0 +1,217 @@
+/* GENERALES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ESTILO DE ENCABEZADO*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #201F1F;
+    height: 6rem;
+    align-items: center;
+}
+
+
+
+header img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+header nav ul {
+    display: none;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+/*ESTILO DE MAIN*/
+
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+#logo_principal_index {
+    width: 18rem;
+    position: absolute;
+    margin-left: 1rem;
+}
+
+#logo_principal {
+    width: 12rem;
+    position: absolute;
+    margin-left: 1rem;
+}
+#imgLogoGrande {
+    display: none;
+}
+
+#section_4{
+    width: 80%;
+}
+
+#section_4 article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#section_1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 6rem;
+    width: 80%;
+}
+
+.estilo_section {
+    background-color: #4a4a4ad3;
+    border: solid 3px #939393;
+}
+
+
+/*ESTILOS DE TEXTO*/
+
+.subtitulo_principal {
+    color: #FFEA1F;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 578;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.texto_principal {
+    color: #FFEA1F;
+    font-family:'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.titulo_tienda {
+    color: #FFEA1F;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 578;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/*ESTILO DE CUADRO DE PRODUCTOS*/
+
+.producto_tienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    background-color: #2A2929;
+    border: solid 2px #A89A10;
+    margin: 0.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.img_producto {
+    width: 15rem;
+}
+
+.boton_comprar {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 578;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    background-color: #FFEA1F;
+    width: 189px;
+    height: 42px;
+}
+
+/*DISEÑO DEL FOOTER*/
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 3rem;
+    background-color: #201F1F;
+    margin-top: 1rem;
+}
+
+footer {
+    display:contents;
+    position: absolute;
+    bottom: 0px;
+    height: 3rem;
+    margin: 0;
+}
+
+/*IMAGENES DE FONDO MOBILE*/
+.fondoImg3{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 80%;
+}
+
+.fondoImg_mobile {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+.fondoImg {
+    display: none;
+}
+
+@media screen and (min-width: 765px) {
+    /*ESTILO ENCABEZADO*/
+    header img {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li a {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 16px;
+        text-transform: uppercase;
+        font-family: 'Arsenal', sans-serif;
+        text-decoration: none;
+        color: white;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        border-left: solid 2px white;
+    }
+
+    .selection {
+        color: #FFEA1F;
+    }
+
+    .infoProyecto {
+        display: grid;
+        grid-template-columns: ;
+        grid-template-rows: ;
+        grid-area: ;
+    }
+}
