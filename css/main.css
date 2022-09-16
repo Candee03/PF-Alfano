@@ -13,8 +13,9 @@ header {
     height: 6rem;
     align-items: center;
 }
-
-
+.selection {
+    color: #FFEA1F;
+}
 
 header img {
     width: 4rem;
@@ -43,7 +44,7 @@ main {
 }
 
 #logo_principal_index {
-    width: 18rem;
+    width: 16rem;
     position: absolute;
     margin-left: 1rem;
 }
@@ -55,17 +56,6 @@ main {
 }
 #imgLogoGrande {
     display: none;
-}
-
-#section_4{
-    width: 80%;
-}
-
-#section_4 article {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 #section_1 {
@@ -80,6 +70,16 @@ main {
     border: solid 3px #939393;
 }
 
+#section_4{
+    width: 80%;
+}
+
+#section_4 article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 /*ESTILOS DE TEXTO*/
 
@@ -153,15 +153,13 @@ footer div {
     color: white;
     height: 3rem;
     background-color: #201F1F;
-    margin-top: 1rem;
+    margin-top: 3.3rem;
 }
 
 footer {
     display:contents;
     position: absolute;
-    bottom: 0px;
     height: 3rem;
-    margin: 0;
 }
 
 /*IMAGENES DE FONDO MOBILE*/
@@ -182,7 +180,7 @@ footer {
 }
 
 @media screen and (min-width: 765px) {
-    /*ESTILO ENCABEZADO*/
+    /*ESTILOS ENCABEZADO*/
     header img {
         display: none;
     }
@@ -204,14 +202,33 @@ footer {
         border-left: solid 2px white;
     }
 
-    .selection {
-        color: #FFEA1F;
+    #logo_principal_index {
+        width: 25vw;
+        position: absolute;
+        margin-left: 0.7rem;
     }
 
+    /*ESTILOS DEL CONTENIDO*/
+    .fondoImg_mobile {
+        display: none;
+    }
+    .fondoImg {
+        display: block;
+        z-index: -1;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        width: 45rem;
+    }
+
+    /*INFO DE PROYECTO*/
     .infoProyecto {
-        display: grid;
-        grid-template-columns: ;
-        grid-template-rows: ;
-        grid-area: ;
+        width: 50%;
+    }
+    #section_1 {
+        margin-top: 0;
+    }
+    main {
+        margin-top: 9rem;
     }
 }
