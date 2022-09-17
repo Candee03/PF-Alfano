@@ -81,6 +81,29 @@ main {
     flex-wrap: wrap;
 }
 
+.containerSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.containerImg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.containerText {
+    margin-top: 2rem;
+}
+
+.img {
+    width: 10rem;
+}
+
 /*ESTILOS DE TEXTO*/
 
 .subtitulo_principal {
@@ -146,20 +169,14 @@ main {
 
 /*DISEÑO DEL FOOTER*/
 
-footer div {
+footer div .pieDePagina {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     height: 3rem;
     background-color: #201F1F;
-    margin-top: 3.3rem;
-}
-
-footer {
-    display:contents;
-    position: absolute;
-    height: 3rem;
+    margin-top: 3.9rem;
 }
 
 /*IMAGENES DE FONDO MOBILE*/
@@ -178,6 +195,11 @@ footer {
 .fondoImg {
     display: none;
 }
+
+.fondoImg1 {
+    display: none;
+}
+
 
 @media screen and (min-width: 765px) {
     /*ESTILOS ENCABEZADO*/
@@ -213,12 +235,20 @@ footer {
         display: none;
     }
     .fondoImg {
-        display: block;
+        display: inline;
         z-index: -1;
-        position: absolute;
+        position: fixed;
         top: 5rem;
         right: 0;
-        width: 45rem;
+        height: 80vh;
+    }
+    .fondoImg1 {
+        display: inline;
+        z-index: -1;
+        position: fixed;
+        top: 3.2rem;
+        right: 0;
+        width: 150vh;
     }
 
     /*INFO DE PROYECTO*/

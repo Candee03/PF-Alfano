@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--Fuentes de texto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,26 +15,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
 
     <!--CSS-->
-    <link rel="stylesheet" href="../css/style.css">
-    <title> Universo SW</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>SW Fan page</title>
 </head>
 
 <body>
     <!--Encabezado-->
+    <a href="../index.html"><img id="logo_principal"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png"
+            alt="logo pricipal de star wars"></a>
     <header>
         <!--Barra de navegacion-->
+        <img src="../img_logos/menu_desplegable.png" alt="">
         <nav class="nav">
             <ul class="nav_list">
                 <li class="nav_list_item"><a class="selection" href="universo_sw.html"> Universo SW</a></li>
-                <li class="nav_list_item"><a href="peliculas.html">  Peliculas</a></li>
+                <li class="nav_list_item"><a href="peliculas.html"> Peliculas</a></li>
                 <li class="nav_list_item"><a href="tienda.html"> Tienda</a></li>
                 <li class="nav_list_item"><a href="contactanos.html"> Contactanos</a></li>
             </ul>
         </nav>
     </header>
+    <img class="fondoImg1" src="../img/fondo_universo_sw.png" alt="">
+    <img class="fondoImg_mobile" src="../img/fondo_universo_sw_mobile.png" alt="">
     <main>
-        <a href="../index.html"><img class="imgLogoPrincipal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="logo pricipal de star wars"></a>
-        <article class="containerSection">
+        <article class="containerSection estilo_section">
+            <!--informacon del universo star wars-->
+            <section class="containerText">
+                <h2 class="subtitulo_principal"> Bienvenido al universo de STAR WARS</h2>
+                <p class="texto_principal">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur consequuntur
+                    molestiae voluptas! Fugit, pariatur enim possimus dolore, voluptas corporis ex incidunt maiores at
+                    neque voluptate! Nesciunt velit perferendis aperiam quia. Sapiente, nostrum distinctio! Soluta
+                    possimus exercitationem nulla autem officia.
+                </p>
+            </section>
             <!--imagenes de los personajes-->
             <section class="containerImg">
                 <img class="img" src="../img/darth vader 1.png" alt="imagen de darth vader">
@@ -48,16 +63,19 @@
                 <img class="img" src="../img/R2D2 1.png" alt="imagen de droide unidad R2D2">
                 <img class="img" src="../img/boba fett 1.png" alt="imagen de boba fett">
             </section>
-            <!--informacon del universo star wars-->
+        </article>
+        
+        <article class="containerSection estilo_section">
+            <!--informacon biomas star wars-->
             <section class="containerText">
-                <h2 class="subtitulo"> Bienvenido al universo de STAR WARS</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur consequuntur molestiae voluptas! Fugit, pariatur enim possimus dolore, voluptas corporis ex incidunt maiores at neque voluptate! Nesciunt velit perferendis aperiam quia. Sapiente, nostrum distinctio! Soluta possimus exercitationem nulla autem officia.
+                <h3 class="subtitulo_principal"> biomas</h3>
+                <p class="texto_principal">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur consequuntur
+                    molestiae voluptas! Fugit, pariatur enim possimus dolore, voluptas corporis ex incidunt maiores at
+                    neque voluptate! Nesciunt velit perferendis aperiam quia. Sapiente, nostrum distinctio! Soluta
+                    possimus exercitationem nulla autem officia.
                 </p>
             </section>
-        </article>
-        <h3 class="subtitulo"> biomas</h3>
-        <article class="containerSection">
             <!--imagenes de los biomas-->
             <section class="containerImg">
                 <img class="img" src="../img/darth vader 1.png" alt="imagen de darth vader">
@@ -71,20 +89,13 @@
                 <img class="img" src="../img/R2D2 1.png" alt="imagen de droide unidad R2D2">
                 <img class="img" src="../img/boba fett 1.png" alt="imagen de boba fett">
             </section>
-            <!--informacon biomas star wars-->
-            <section class="containerText">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur consequuntur molestiae voluptas! Fugit, pariatur enim possimus dolore, voluptas corporis ex incidunt maiores at neque voluptate! Nesciunt velit perferendis aperiam quia. Sapiente, nostrum distinctio! Soluta possimus exercitationem nulla autem officia.
-                </p>
-            </section>
         </article>
     </main>
-
-    <footer >
+    <footer>
         <div>
             <p class="pieDePagina"> Derechos reservados y redes sociales</p>
         </div>
     </footer>
-    <img class="fondoImg1" src="../img/fondo_universo_sw.png" alt="">
 </body>
+
 </html>
