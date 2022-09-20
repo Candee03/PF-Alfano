@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a:hover {
+    color: #FFEA1F;
+}
 
 /*ESTILO DE ENCABEZADO*/
 header {
@@ -14,41 +17,56 @@ header {
     align-items: center;
 }
 .selection {
-    color: #FFEA1F;
+    color: #FFEA1F !important;
 }
-
-header img {
-    width: 4rem;
-    margin-right: 1rem;
+.nav_list_item {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: 'Arsenal', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-top: 0.3rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    border-left: solid 2px white;
 }
-
-header nav ul {
-    display: none;
+.nav_list_item:hover {
+    animation: pulse;
+    animation-duration: 1.3s;
 }
-
-header nav ul li {
-    list-style: none;
+.estiloDeBoton {
+    background-color: #4A4A4A;
+    border: 2px solid #939393;
+}
+.fondo_despleglable {
+    background-color: #201f1fd6;
+    padding: 0.2rem;
+}
+.container{
+    flex-direction: row-reverse;
+    flex-wrap:unset !important;
 }
 
 /*ESTILO DE MAIN*/
-
 body {
     background-color: black;
 }
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 12rem;
+    margin-top: 10rem;
 }
-
+#main_contacto {
+    margin-top: 14rem;
+}
 #logo_principal_index {
-    width: 16rem;
+    width: 14rem;
     position: absolute;
     margin-left: 1rem;
 }
-
 #logo_principal {
     width: 12rem;
     position: absolute;
@@ -57,17 +75,23 @@ main {
 #imgLogoGrande {
     display: none;
 }
+.estilo_section {
+    background-color: #4a4a4ad3;
+    border: solid 3px #939393;
+}
+.containerSection {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
 
 #section_1 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 6rem;
     width: 80%;
-}
-
-.estilo_section {
-    background-color: #4a4a4ad3;
-    border: solid 3px #939393;
 }
 
 #section_4{
@@ -79,13 +103,6 @@ main {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.containerSection {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
 }
 
 .containerImg {
@@ -100,12 +117,46 @@ main {
     margin-top: 2rem;
 }
 
+.container_peliculas {
+    width: 90%;
+    display: flex;
+    margin: 0.7rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container_info_pelis {
+    margin-top: 0.5rem;
+}
+.pelicula_trailer {
+    height: 15rem;
+    position: relative;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
 .img {
     width: 10rem;
 }
 
 /*ESTILOS DE TEXTO*/
-
+.link_ver_episodio {
+    text-decoration: underline;
+    color: #FFF591;
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 578;
+    text-align: center;
+    text-transform: uppercase;
+}
+.parrafo_blanco {
+    color: #ffffff;
+    font-family:'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+}
 .subtitulo_principal {
     color: #FFEA1F;
     font-family: 'Cinzel';
@@ -115,7 +166,6 @@ main {
     text-align: center;
     margin-bottom: 1rem;
 }
-
 .texto_principal {
     color: #FFEA1F;
     font-family:'Arsenal', sans-serif;
@@ -126,8 +176,7 @@ main {
     text-align: center;
     padding-bottom: 1rem;
 }
-
-.titulo_tienda {
+.titulo {
     color: #FFEA1F;
     font-family: 'Cinzel';
     font-style: normal;
@@ -139,7 +188,6 @@ main {
 }
 
 /*ESTILO DE CUADRO DE PRODUCTOS*/
-
 .producto_tienda {
     display: flex;
     flex-direction: column;
@@ -168,81 +216,89 @@ main {
 }
 
 /*DISEÑO DEL FOOTER*/
-
-footer div .pieDePagina {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 3rem;
+.pieDePagina {
+    z-index: 2;
     background-color: #201F1F;
-    margin-top: 3.9rem;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: 'Arsenal', sans-serif;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-top: 1.3rem;
+}
+.img_redes {
+    width: 2rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.img_redes:hover {
+    box-shadow: 2px 2px 3px #FFEA1F;
+    border-radius: 3px;
+    animation: pulse;
+    animation-duration: 0.5s;
 }
 
 /*IMAGENES DE FONDO MOBILE*/
-.fondoImg3{
+#fondoImg3{
     width: 100%;
     position: absolute;
     z-index: -1;
     opacity: 80%;
 }
-
-.fondoImg_mobile {
+#fondoImg2 {
+    z-index: -1;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+}
+#fondoImg_mobile {
     z-index: -1;
     position: absolute;
     width: 100%;
 }
-.fondoImg {
+#fondoImg {
     display: none;
 }
 
-.fondoImg1 {
+#fondoImg1 {
     display: none;
 }
 
+#img_fondo5_1 {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+}
+#img_fondo5_2 {
+    display: none;
+}
 
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 700px) {
     /*ESTILOS ENCABEZADO*/
-    header img {
-        display: none;
-    }
-
-    header nav ul {
-        display: flex;
-    }
-
-    header nav ul li a {
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 16px;
-        text-transform: uppercase;
-        font-family: 'Arsenal', sans-serif;
-        text-decoration: none;
-        color: white;
-        padding-left: 0.7rem;
-        padding-right: 0.7rem;
-        border-left: solid 2px white;
-    }
-
     #logo_principal_index {
         width: 25vw;
         position: absolute;
         margin-left: 0.7rem;
     }
-
     /*ESTILOS DEL CONTENIDO*/
-    .fondoImg_mobile {
+    #fondoImg_mobile {
         display: none;
     }
-    .fondoImg {
+    #fondoImg {
         display: inline;
         z-index: -1;
         position: fixed;
         top: 5rem;
         right: 0;
-        height: 80vh;
+        height: 90%;
     }
-    .fondoImg1 {
+    #fondoImg1 {
         display: inline;
         z-index: -1;
         position: fixed;
@@ -250,7 +306,21 @@ footer div .pieDePagina {
         right: 0;
         width: 150vh;
     }
-
+    #img_fondo5_1 {
+        display: inline;
+        z-index: -1;
+        position: absolute;
+        width: 43%;
+        top: 0rem;
+    }
+    #img_fondo5_2 {
+        display: inline;
+        z-index: -1;
+        position: absolute;
+        width: 43%;
+        right: 0;
+        bottom: 0rem;
+    }
     /*INFO DE PROYECTO*/
     .infoProyecto {
         width: 50%;
@@ -260,5 +330,14 @@ footer div .pieDePagina {
     }
     main {
         margin-top: 9rem;
+    }
+    #main_contacto {
+        margin-top: 5.5rem;
+    }
+    .container_peliculas {
+        flex-wrap: nowrap;
+    }
+    .titulo {
+        text-align: center;
     }
 }

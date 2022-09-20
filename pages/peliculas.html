@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!--link Animaciones Wow-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!--Fuentes de texto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,57 +14,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
-
+    <!-- CSS para BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--CSS-->
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Peliculas</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>SW Fan Page</title>
 </head>
 <body>
     <!--Encabezado-->
+    <a href="../index.html"><img id="logo_principal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="logo pricipal de star wars"></a>
     <header>
-        <!--Barra de navegacion-->
-        <nav class="nav">
-            <ul class="nav_list">
-                <li class="nav_list_item"><a href="universo_sw.html"> Universo SW</a></li>
-                <li class="nav_list_item"><a class="selection" href="peliculas.html">  Peliculas</a></li>
-                <li class="nav_list_item"><a href="tienda.html"> Tienda</a></li>
-                <li class="nav_list_item"><a href="contactanos.html"> Contactanos</a></li>
-            </ul>
-        </nav>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler estiloDeBoton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav_list_item" href="universo_sw.html"> Universo SW</a>
+                    <a class="nav_list_item  selection" href="peliculas.html"> Peliculas</a>
+                    <a class="nav_list_item" href="tienda.html"> Tienda</a>
+                    <a class="nav_list_item" href="contactanos.html"> Contactanos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     </header>
-    <!--Informacion del proyecto-->
+    <!--Imagenes de fondo-->
+    <img id="fondoImg2" src="../img/fondo_peliculas.png" alt="imagen de planeta felucia">
+
     <main>
-        <a href="../index.html"><img class="imgLogoPrincipal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="logo pricipal de star wars"></a>
-        <article class="container_div_info_peliculas">
-            <h1 class="subtitulo"> Informacion sobre las peliculas:</h1>
+        <article class="containerSection estilo_section">
+            <h1 class="titulo"> Informacion sobre las peliculas:</h1>
             <!--Episodio IV-->
-            <section>
-                <div class="container_trailer_peliculas">
+            <section class="container_peliculas">
+                <div>
                     <iframe class="pelicula_trailer" src="https://www.youtube.com/embed/beAH5vea99k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="container_info_peliculas">
+                <div class="container_info_pelis">
                     <a class="link_ver_episodio" href="https://www.disneyplus.com/es-419/movies/star-wars-una-nueva-esperanza-episodio-iv/12fVeZxD2fWJ" target="_blank"> ver episodio IV</a>
                     <p class="parrafo_blanco"> La nave en la que viaja la princesa Leia es capturada por las tropas imperiales al mando del temible Darth Vader. Antes de ser atrapada, Leia consigue introducir un mensaje en su robot R2-D2, quien acompañado de su inseparable C-3PO logran escapar pero son capturados y vendidos al joven Luke Skywalker, quien descubrirá el mensaje oculto que va destinado a Obi Wan Kenobi, maestro Jedi a quien Luke debe encontrar para salvar a la princesa.</p>
                 </div>
             </section>
             <!--Episodio V-->  
-            <section>
-                <div class="container_trailer_peliculas">
+            <section class="container_peliculas">
+                <div>
                     <iframe class="pelicula_trailer" src="https://www.youtube.com/embed/xr3hPFJAHO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="container_info_peliculas">
+                <div class="container_info_pelis">
                     <a class="link_ver_episodio" href="https://www.disneyplus.com/es-419/movies/star-wars-el-imperio-contraataca-episodio-v/iqtDTZAewwYl" target="_blank"> ver episodio V</a>
                     <p class="parrafo_blanco"> En este episodio se desarrolla la historia de amor entre Han y Leia, mientras que Luke aprende más sobre los caminos de la Fuerza de la mano del maestro Yoda. Con Han y Leia capturados por el Imperio, Luke luchará contra Darth Vader en una confrontación sin igual, pero Vader esconde una terrible revelación.</p>
                 </div>
             </section>
         </article>
     </main>
-    
-    <footer >
-        <div>
-            <p class="pieDePagina"> Derechos reservados y redes sociales</p>
+    <!--Pie de página-->
+    <footer>
+        <div class="pieDePagina">
+            <p> Derechos reservados y redes sociales</p>
+            <a href="https://www.youtube.com/channel/UCtbGAbsn-s5xOVsFi6EykUQ" target="_blank"><img class="img_redes" src="../img_logos/youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/starwars/" target="_blank"><img class="img_redes" src="../img_logos/instagram.png" alt=""></a>
         </div>
     </footer>
-    <img class="fondoImg2" src="../img/fondo_peliculas.png" alt="">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
