@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: flex-end;
     background-color: #201F1F;
-    height: 6rem;
+    height: 7rem;
     align-items: center;
 }
 .selection {
@@ -21,13 +21,14 @@ header {
 }
 .nav_list_item {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 16px;
     text-transform: uppercase;
     font-family: 'Arsenal', sans-serif;
     text-decoration: none;
     color: white;
-    padding-top: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
     border-left: solid 2px white;
@@ -105,14 +106,6 @@ main {
     flex-wrap: wrap;
 }
 
-.containerImg {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
 .containerText {
     margin-top: 2rem;
 }
@@ -128,13 +121,15 @@ main {
     margin-top: 0.5rem;
 }
 .pelicula_trailer {
-    height: 15rem;
+    height: 80%;
     position: relative;
     margin-right: 1rem;
-    margin-left: 1rem;
 }
 .img {
     width: 10rem;
+}
+.img:hover {
+    transform: scale(1.1);
 }
 
 /*ESTILOS DE TEXTO*/
@@ -162,7 +157,7 @@ main {
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 578;
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -233,14 +228,17 @@ main {
 .img_redes {
     width: 2rem;
     margin-left: 0.3rem;
-    margin-bottom: 0.3rem;
-}
-
-.img_redes:hover {
-    box-shadow: 2px 2px 3px #FFEA1F;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 5px #FFEA1F;
     border-radius: 3px;
-    animation: pulse;
-    animation-duration: 0.5s;
+    animation-name: anim_icon_redes;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+@keyframes anim_icon_redes {
+    0% {width: 2rem;}
+    50% {width: 2.1rem;}
+    100% {width: 2rem;}
 }
 
 /*IMAGENES DE FONDO MOBILE*/
@@ -294,7 +292,7 @@ main {
         display: inline;
         z-index: -1;
         position: fixed;
-        top: 5rem;
+        top: 3rem;
         right: 0;
         height: 90%;
     }
@@ -302,9 +300,9 @@ main {
         display: inline;
         z-index: -1;
         position: fixed;
-        top: 3.2rem;
+        top: 2rem;
         right: 0;
-        width: 150vh;
+        width: 160vh;
     }
     #img_fondo5_1 {
         display: inline;
