@@ -7,6 +7,20 @@
 a:hover {
     color: #FFEA1F;
 }
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #201F1F;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    border: 7px solid rgba(0, 0, 255, 0.796);
+}
 /*ESTILO DE ENCABEZADO*/
 header {
     display: flex;
@@ -164,6 +178,7 @@ main {
 }
 .img:hover {
     transform: scale(1.1);
+    box-shadow: 1px 1px 10px white;
 }
 
 /*ESTILOS DE TEXTO*/
