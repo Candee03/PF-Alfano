@@ -7,7 +7,6 @@
 a:hover {
     color: #FFEA1F;
 }
-
 /*ESTILO DE ENCABEZADO*/
 header {
     display: flex;
@@ -40,10 +39,17 @@ header {
 .estiloDeBoton {
     background-color: #4A4A4A;
     border: 2px solid #939393;
+    position: absolute;
+    margin-top: 3rem;
+}
+.estilo_list_nav {
+    position: absolute;
+    margin-top: 13rem;
 }
 .fondo_despleglable {
-    background-color: #201f1fd6;
-    padding: 0.2rem;
+    background-color: #4a4a4ac4;
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
 }
 .container{
     flex-direction: row-reverse;
@@ -60,15 +66,40 @@ main {
     align-items: center;
     margin-top: 10rem;
 }
-#main_contacto {
-    margin-top: 14rem;
+#container_formulario {
+    display: flex;
+    justify-content: center;
 }
+#main_contacto {
+    background-color: #4a4a4ad3;
+    border: solid 3px #939393;
+    width: 90%;
+    padding: 1rem;
+}
+.espacio_para_escribir {
+    width: 90%;
+    margin-bottom: 1rem;
+    background-color: #4a4a4ad3;
+    border: solid 1px #939393;
+}
+.espacio_para_escribir2 {
+    width: 90%;
+    height: 100px;
+    margin-bottom: 1rem;
+    background-color: #4a4a4ad3;
+    border: solid 1px #939393;
+}
+
+
 #logo_principal_index {
-    width: 14rem;
+    display: none;
+}
+#logo_principal {
+    width: 12rem;
     position: absolute;
     margin-left: 1rem;
 }
-#logo_principal {
+#logo_principal_desktop {
     width: 12rem;
     position: absolute;
     margin-left: 1rem;
@@ -85,7 +116,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 85%;
 }
 
 #section_1 {
@@ -108,6 +139,8 @@ main {
 
 .containerText {
     margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .container_peliculas {
@@ -121,12 +154,13 @@ main {
     margin-top: 0.5rem;
 }
 .pelicula_trailer {
+    width: 100%;
     height: 80%;
     position: relative;
-    margin-right: 1rem;
 }
+
 .img {
-    width: 10rem;
+    width: 8rem;
 }
 .img:hover {
     transform: scale(1.1);
@@ -171,15 +205,34 @@ main {
     text-align: center;
     padding-bottom: 1rem;
 }
+.texto_principal2 {
+    color: #FFEA1F;
+    font-family:'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 1rem;
+}
 .titulo {
+    color: #FFEA1F;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 578;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.titulo2 {
     color: #FFEA1F;
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 578;
     font-size: 24px;
     text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
 }
 
 /*ESTILO DE CUADRO DE PRODUCTOS*/
@@ -208,6 +261,14 @@ main {
     background-color: #FFEA1F;
     width: 189px;
     height: 42px;
+}
+.boton_form {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 578;
+    font-size: 1rem;
+    background-color: #FFEA1F;
+    width: 6rem;
 }
 
 /*DISEÑO DEL FOOTER*/
@@ -250,14 +311,21 @@ main {
 }
 #fondoImg2 {
     z-index: -1;
-    position: fixed;
-    top: 50px;
+    position: absolute;
+    top: 105px;
     width: 100%;
 }
 #fondoImg_mobile {
     z-index: -1;
     position: absolute;
     width: 100%;
+    opacity: 80%;
+}
+#fondoImg_mobile2 {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    opacity: 80%;
 }
 #fondoImg {
     display: none;
@@ -278,48 +346,39 @@ main {
 }
 
 @media screen and (min-width: 700px) {
-    /*ESTILOS ENCABEZADO*/
-    #logo_principal_index {
-        width: 25vw;
-        position: absolute;
-        margin-left: 0.7rem;
-    }
     /*ESTILOS DEL CONTENIDO*/
-    #fondoImg_mobile {
-        display: none;
-    }
     #fondoImg {
-        display: inline;
+        display: block;
         z-index: -1;
-        position: fixed;
-        top: 3rem;
+        position: absolute;
         right: 0;
         height: 90%;
     }
-    #fondoImg1 {
-        display: inline;
-        z-index: -1;
-        position: fixed;
-        top: 2rem;
-        right: 0;
-        width: 160vh;
+    #fondoImg_mobile {
+        display: none;
     }
     #img_fondo5_1 {
-        display: inline;
+        display: inline-block;
         z-index: -1;
         position: absolute;
-        width: 43%;
-        top: 0rem;
+        width: 50%;
+        top: 7rem;
+        opacity: 80%;
     }
     #img_fondo5_2 {
-        display: inline;
+        display: inline-block;
         z-index: -1;
         position: absolute;
-        width: 43%;
+        width: 50%;
         right: 0;
-        bottom: 0rem;
+        top: 7rem;
+        opacity: 80%;
     }
     /*INFO DE PROYECTO*/
+    .container_info_pelis {
+        width: 55%;
+        margin-left: 1rem;
+    }
     .infoProyecto {
         width: 50%;
     }
@@ -329,13 +388,42 @@ main {
     main {
         margin-top: 9rem;
     }
-    #main_contacto {
-        margin-top: 5.5rem;
-    }
     .container_peliculas {
         flex-wrap: nowrap;
+        justify-content: space-between;
     }
     .titulo {
         text-align: center;
+    }
+    .img {
+        width: 10rem;
+    }
+}
+
+@media screen and (min-width: 740px) {
+    /*ESTILOS ENCABEZADO*/
+    #logo_principal_index {
+        display: inline;
+        width: 25vw;
+        position: absolute;
+        margin-left: 1rem;
+    }
+    #logo_principal_desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .estilo_list_nav {
+        position: relative;
+        margin-top: 0.5rem;
+    }
+    .fondo_despleglable {
+        background-color: transparent;
+    }
+    #main_contacto {
+        width: 35%;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
