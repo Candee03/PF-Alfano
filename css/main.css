@@ -8,6 +8,10 @@ a:hover {
     color: #FFEA1F;
 }
 
+html {
+    height: 100%;
+}
+
 body::-webkit-scrollbar {
     width: 15px;
 }
@@ -17,9 +21,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 10px;
-    border: 7px solid rgba(0, 0, 255, 0.796);
+    background-color: #c8b617;
+    border-radius: 8px;
 }
 /*ESTILO DE ENCABEZADO*/
 header {
@@ -288,6 +291,11 @@ main {
 
 /*DISEÑO DEL FOOTER*/
 .pieDePagina {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     z-index: 2;
     background-color: #201F1F;
     font-weight: 400;
@@ -298,8 +306,8 @@ main {
     text-decoration: none;
     color: white;
     text-align: center;
-    padding-top: 0.5rem;
-    margin-top: 1.3rem;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 .img_redes {
     width: 2rem;
@@ -367,7 +375,7 @@ main {
         z-index: -1;
         position: absolute;
         right: 0;
-        height: 90%;
+        height: 85%;
     }
     #fondoImg_mobile {
         display: none;
@@ -419,7 +427,7 @@ main {
     /*ESTILOS ENCABEZADO*/
     #logo_principal_index {
         display: inline;
-        width: 25vw;
+        max-width: 18rem;
         position: absolute;
         margin-left: 1rem;
     }
