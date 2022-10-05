@@ -1,0 +1,35 @@
+//imports de variables
+@import "variables.scss";
+
+body {
+    img#fondoImg_mobile2 {
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        opacity: 80%;
+    }
+    main {
+        article.containerSection {
+            @include containerSection;
+            @include estilo_section;
+            section.containerText {
+                @include cont-text;
+                h2 {
+                    @include titulo(0rem, 1rem);
+                }
+                p {
+                    @include texto_principal;
+                }
+            }
+            section{
+                img.img {
+                    width: 8rem;
+                }
+            }
+        }
+    }
+}
+.img:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px white;
+}

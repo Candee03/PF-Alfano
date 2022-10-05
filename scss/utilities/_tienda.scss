@@ -1,0 +1,50 @@
+//imports de variables
+@import "variables.scss";
+
+body {
+    img#fondoImg3 {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 80%;
+    }
+    main {
+        section.estilo_section#section_4 {
+            width: 80%;
+            @include estilo_section;
+            h1 {
+                @include titulo(1.5rem, 1.5rem);
+            }
+            article {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                div.producto_tienda {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 18rem;
+                    background-color: #2A2929;
+                    border: solid 2px #A89A10;
+                    margin: 0.5rem;
+                    padding-top: 2.5rem;
+                    padding-bottom: 1.5rem;
+                    img.img_producto {
+                        width: 15rem;
+                    }
+                    button.boton_comprar {
+                        font-family: 'Cinzel';
+                        font-style: normal;
+                        font-weight: 578;
+                        font-size: 1.5rem;
+                        margin-top: 2rem;
+                        background-color: #FFEA1F;
+                        width: 189px;
+                        height: 42px;
+                    }
+                }
+            }
+        }
+    }
+}

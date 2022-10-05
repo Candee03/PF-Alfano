@@ -1,0 +1,44 @@
+footer.pieDePagina {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #201F1F;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: 'Arsenal', sans-serif;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    a {
+        img.img_redes {
+            width: 2rem;
+            margin-left: 0.3rem;
+            margin-bottom: 1rem;
+            border-radius: 3px;
+        }
+    }
+    a {
+        img.img_irArriba {
+            width: 4rem;
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            animation-name: anim_icon_redes;
+            animation-iteration-count: infinite;
+            animation-duration: 1.8s;
+        }
+    }
+}
+
+@keyframes anim_icon_redes {
+    0% {bottom: 1rem;}
+    50% {bottom: 1.2rem;}
+    100% {bottom: 1rem;}
+}

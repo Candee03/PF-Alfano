@@ -1,0 +1,39 @@
+//sections
+@mixin estilo_section {
+    background-color: #4a4a4ad3;
+    border: solid 3px #939393;
+}
+@mixin containerSection {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+}
+@mixin cont-text {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+//estilos textos
+@mixin texto_principal {
+    color: #FFEA1F;
+    font-family:'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+@mixin titulo ($marginT, $marginB) {
+    color: #FFEA1F;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 578;
+    font-size: 26px;
+    text-align: center;
+    margin-top: $marginT;
+    margin-bottom: $marginB;
+}

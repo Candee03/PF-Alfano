@@ -1,0 +1,54 @@
+header#arriba {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #201F1F;
+    height: 7rem;
+    align-items: center;
+    nav {
+        div.container {
+            flex-direction: row-reverse;
+            flex-wrap:unset !important;
+            .estiloDeBoton {
+                background-color: #4A4A4A;
+                position: absolute;
+                border: 2px solid #939393;
+                margin-top: 3rem;
+            }
+            .estilo_list_nav {
+                position: absolute;
+                margin-top: 13rem;
+                background-color: #4a4a4ac4;
+                padding-top: 0.2rem;
+                padding-bottom: 0.3rem;
+                .navbar-nav {
+                    a.nav_list_item {
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 16px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-family: 'Arsenal', sans-serif;
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.2rem;
+                            padding-left: 0.7rem;
+                            padding-right: 0.7rem;
+                            color: white;
+                            border-left: solid 2px white;
+                    } 
+                }
+            }
+        }
+    }
+}
+.nav_list_item:hover {
+        animation: pulse;
+        animation-duration: 1.3s;
+}
+.selection {
+    color: #FFEA1F !important;
+}
+#logo_principal {
+    width: 12rem;
+    position: absolute;
+    margin-left: 1rem;
+}

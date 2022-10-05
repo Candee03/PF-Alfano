@@ -1,0 +1,68 @@
+//imports de variables
+@import "variables.scss";
+
+body {
+    img#img_fondo5_1 {
+        z-index: -1;
+        position: absolute;
+        width: 100vw;
+        top: 0;
+    }
+    img#img_fondo5_2 {
+        display: none;
+    }
+    main#container_formulario {
+        display: flex;
+        justify-content: center;
+        div#main_contacto {
+            background-color: #4a4a4ad3;
+            border: solid 3px #939393;
+            width: 90%;
+            padding: 1rem;
+            form {
+                fieldset {
+                    legend.titulo2 {
+                        color: #FFEA1F;
+                        font-family: 'Cinzel';
+                        font-style: normal;
+                        font-weight: 578;
+                        font-size: 24px;
+                        text-align: center;
+                        margin-top: 0.7rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    label.subtitulo_form {
+                        color: #FFEA1F;
+                        font-family:'Arsenal', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 32px;
+                        padding-bottom: 1rem;
+                    }
+                    input.espacio_para_escribir {
+                        width: 90%;
+                        height: 100px;
+                        margin-bottom: 1rem;
+                        background-color: #4a4a4ad3;
+                        border: solid 1px #939393;
+                    }
+                    input.espacio_para_escribir2 {
+                        width: 90%;
+                        margin-bottom: 1rem;
+                        background-color: #4a4a4ad3;
+                        border: solid 1px #939393;
+                    }
+                    input.boton_form {
+                        font-family: 'Cinzel';
+                        font-style: normal;
+                        font-weight: 578;
+                        font-size: 1rem;
+                        background-color: #FFEA1F;
+                        width: 6rem;
+                    }
+                }
+            }
+        }
+    }
+}

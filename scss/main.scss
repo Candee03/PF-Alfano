@@ -1,0 +1,42 @@
+//imports de los utilities
+@import "utilities/header";
+@import "utilities/index";
+@import "utilities/footer";
+@import "utilities/universo_sw";
+@import "utilities/peliculas";
+@import "utilities/tienda";
+@import "utilities/contactanos";
+@import "utilities/mq.scss";
+
+/* GENERALES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+    }
+    //barra de scroll
+    body {
+        background-color: black;
+    }
+    body::-webkit-scrollbar {
+        width: 15px;
+    }
+    
+    body::-webkit-scrollbar-track {
+        background: #201F1F;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: #c8b617;
+        border-radius: 8px;
+    }
+}

@@ -1,238 +1,190 @@
-/* GENERALES*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a:hover {
-    color: #FFEA1F;
-}
-
-html {
-    height: 100%;
-}
-
-body::-webkit-scrollbar {
-    width: 15px;
-}
-
-body::-webkit-scrollbar-track {
-    background: #201F1F;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #c8b617;
-    border-radius: 8px;
-}
-/*ESTILO DE ENCABEZADO*/
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #201F1F;
-    height: 7rem;
-    align-items: center;
-}
-.selection {
-    color: #FFEA1F !important;
-}
-.nav_list_item {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 16px;
-    text-transform: uppercase;
-    font-family: 'Arsenal', sans-serif;
-    text-decoration: none;
-    color: white;
-    padding-top: 0.5rem;
-    padding-bottom: 0.2rem;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
-    border-left: solid 2px white;
-}
-.nav_list_item:hover {
-    animation: pulse;
-    animation-duration: 1.3s;
-}
-.estiloDeBoton {
-    background-color: #4A4A4A;
-    border: 2px solid #939393;
-    position: absolute;
-    margin-top: 3rem;
-}
-.estilo_list_nav {
-    position: absolute;
-    margin-top: 13rem;
-}
-.fondo_despleglable {
-    background-color: #4a4a4ac4;
-    padding-top: 0.2rem;
-    padding-bottom: 0.3rem;
-}
-.container{
+header#arriba {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #201F1F;
+  height: 7rem;
+  align-items: center; }
+  header#arriba nav div.container {
     flex-direction: row-reverse;
-    flex-wrap:unset !important;
-}
+    flex-wrap: unset !important; }
+    header#arriba nav div.container .estiloDeBoton {
+      background-color: #4A4A4A;
+      position: absolute;
+      border: 2px solid #939393;
+      margin-top: 3rem; }
+    header#arriba nav div.container .estilo_list_nav {
+      position: absolute;
+      margin-top: 13rem;
+      background-color: #4a4a4ac4;
+      padding-top: 0.2rem;
+      padding-bottom: 0.3rem; }
+      header#arriba nav div.container .estilo_list_nav .navbar-nav a.nav_list_item {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Arsenal', sans-serif;
+        padding-top: 0.5rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: white;
+        border-left: solid 2px white; }
 
-/*ESTILO DE MAIN*/
-body {
-    background-color: black;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10rem;
-}
-#container_formulario {
-    display: flex;
-    justify-content: center;
-}
-#main_contacto {
-    background-color: #4a4a4ad3;
-    border: solid 3px #939393;
-    width: 90%;
-    padding: 1rem;
-}
-.espacio_para_escribir {
-    width: 90%;
-    margin-bottom: 1rem;
-    background-color: #4a4a4ad3;
-    border: solid 1px #939393;
-}
-.espacio_para_escribir2 {
-    width: 90%;
-    height: 100px;
-    margin-bottom: 1rem;
-    background-color: #4a4a4ad3;
-    border: solid 1px #939393;
-}
+.nav_list_item:hover {
+  animation: pulse;
+  animation-duration: 1.3s; }
 
+.selection {
+  color: #FFEA1F !important; }
 
-#logo_principal_index {
-    display: none;
-}
 #logo_principal {
-    width: 12rem;
-    position: absolute;
-    margin-left: 1rem;
-}
-#logo_principal_desktop {
-    width: 12rem;
-    position: absolute;
-    margin-left: 1rem;
-}
-#imgLogoGrande {
-    display: none;
-}
-.estilo_section {
-    background-color: #4a4a4ad3;
-    border: solid 3px #939393;
-}
-.containerSection {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 85%;
-}
+  width: 12rem;
+  position: absolute;
+  margin-left: 1rem; }
 
-#section_1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 6rem;
-    width: 80%;
-}
+body a img#logo_principal_desktop {
+  width: 12rem;
+  position: absolute;
+  margin-left: 1rem; }
 
-#section_4{
-    width: 80%;
-}
+body img#logo_principal_index {
+  display: none; }
 
-#section_4 article {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+body img#fondoImg {
+  display: none; }
 
-.containerText {
-    margin-top: 2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
+body img#fondoImg_mobile {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  opacity: 80%; }
 
-.container_peliculas {
-    width: 90%;
-    display: flex;
-    margin: 0.7rem;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.container_info_pelis {
-    margin-top: 0.5rem;
-}
-.pelicula_trailer {
-    width: 100%;
-    height: 80%;
-    position: relative;
-}
-
-.img {
-    width: 8rem;
-}
-.img:hover {
-    transform: scale(1.1);
-    box-shadow: 1px 1px 10px white;
-}
-
-/*ESTILOS DE TEXTO*/
-.link_ver_episodio {
-    text-decoration: underline;
-    color: #FFF591;
-    font-family: 'Cinzel', serif;
-    font-size: 32px;
-    line-height: 30px;
-    font-weight: 578;
-    text-align: center;
-    text-transform: uppercase;
-}
-.parrafo_blanco {
-    color: #ffffff;
-    font-family:'Arsenal', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: left;
-}
-.subtitulo_principal {
+body main.infoProyecto section#section_1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 6rem;
+  width: 80%;
+  background-color: #4a4a4ad3;
+  border: solid 3px #939393; }
+  body main.infoProyecto section#section_1 h1 {
     color: #FFEA1F;
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 578;
     font-size: 26px;
     text-align: center;
-    margin-bottom: 1rem;
-}
-.texto_principal {
+    margin-top: 0rem;
+    margin-bottom: 1rem; }
+  body main.infoProyecto section#section_1 p {
     color: #FFEA1F;
-    font-family:'Arsenal', sans-serif;
+    font-family: 'Arsenal', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     text-align: center;
-    padding-bottom: 1rem;
-}
-.texto_principal2 {
-    color: #FFEA1F;
-    font-family:'Arsenal', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    padding-bottom: 1rem;
-}
-.titulo {
+    padding-bottom: 1rem; }
+
+footer.pieDePagina {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #201F1F;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: 'Arsenal', sans-serif;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem; }
+  footer.pieDePagina a img.img_redes {
+    width: 2rem;
+    margin-left: 0.3rem;
+    margin-bottom: 1rem;
+    border-radius: 3px; }
+  footer.pieDePagina a img.img_irArriba {
+    width: 4rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    animation-name: anim_icon_redes;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s; }
+
+@keyframes anim_icon_redes {
+  0% {
+    bottom: 1rem; }
+  50% {
+    bottom: 1.2rem; }
+  100% {
+    bottom: 1rem; } }
+
+body img#fondoImg_mobile2 {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  opacity: 80%; }
+
+body main article.containerSection {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85%;
+  background-color: #4a4a4ad3;
+  border: solid 3px #939393; }
+  body main article.containerSection section.containerText {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; }
+    body main article.containerSection section.containerText h2 {
+      color: #FFEA1F;
+      font-family: 'Cinzel';
+      font-style: normal;
+      font-weight: 578;
+      font-size: 26px;
+      text-align: center;
+      margin-top: 0rem;
+      margin-bottom: 1rem; }
+    body main article.containerSection section.containerText p {
+      color: #FFEA1F;
+      font-family: 'Arsenal', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      padding-bottom: 1rem; }
+  body main article.containerSection section img.img {
+    width: 8rem; }
+
+.img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 10px white; }
+
+body img#fondoImg2 {
+  z-index: -1;
+  position: absolute;
+  top: 105px;
+  width: 100%; }
+
+body main article.containerSection {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85%;
+  background-color: #4a4a4ad3;
+  border: solid 3px #939393; }
+  body main article.containerSection h1.titulo {
     color: #FFEA1F;
     font-family: 'Cinzel';
     font-style: normal;
@@ -240,213 +192,215 @@ main {
     font-size: 26px;
     text-align: center;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-.titulo2 {
+    margin-bottom: 1.5rem; }
+  body main article.containerSection section.container_peliculas {
+    width: 90%;
+    display: flex;
+    margin: 0.7rem;
+    flex-wrap: wrap;
+    align-items: center; }
+    body main article.containerSection section.container_peliculas div iframe.pelicula_trailer {
+      width: 100%;
+      height: 80%;
+      position: relative; }
+    body main article.containerSection section.container_peliculas div.container_info_pelis {
+      margin-top: 0.5rem; }
+      body main article.containerSection section.container_peliculas div.container_info_pelis a.link_ver_episodio {
+        text-decoration: underline;
+        color: #FFF591;
+        font-family: 'Cinzel', serif;
+        font-size: 32px;
+        line-height: 30px;
+        font-weight: 578;
+        text-align: center;
+        text-transform: uppercase; }
+      body main article.containerSection section.container_peliculas div.container_info_pelis p.parrafo_blanco {
+        color: #ffffff;
+        font-family: 'Arsenal', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: left; }
+
+body img#fondoImg3 {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 80%; }
+
+body main section.estilo_section#section_4 {
+  width: 80%;
+  background-color: #4a4a4ad3;
+  border: solid 3px #939393; }
+  body main section.estilo_section#section_4 h1 {
     color: #FFEA1F;
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 578;
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
-    margin-top: 0.7rem;
-    margin-bottom: 0.5rem;
-}
-
-/*ESTILO DE CUADRO DE PRODUCTOS*/
-.producto_tienda {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+  body main section.estilo_section#section_4 article {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 18rem;
-    background-color: #2A2929;
-    border: solid 2px #A89A10;
-    margin: 0.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.img_producto {
-    width: 15rem;
-}
-
-.boton_comprar {
-    font-family: 'Cinzel';
-    font-style: normal;
-    font-weight: 578;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    background-color: #FFEA1F;
-    width: 189px;
-    height: 42px;
-}
-.boton_form {
-    font-family: 'Cinzel';
-    font-style: normal;
-    font-weight: 578;
-    font-size: 1rem;
-    background-color: #FFEA1F;
-    width: 6rem;
-}
-
-/*DISEÑO DEL FOOTER*/
-.pieDePagina {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap; }
+    body main section.estilo_section#section_4 article div.producto_tienda {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 18rem;
+      background-color: #2A2929;
+      border: solid 2px #A89A10;
+      margin: 0.5rem;
+      padding-top: 2.5rem;
+      padding-bottom: 1.5rem; }
+      body main section.estilo_section#section_4 article div.producto_tienda img.img_producto {
+        width: 15rem; }
+      body main section.estilo_section#section_4 article div.producto_tienda button.boton_comprar {
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 578;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        background-color: #FFEA1F;
+        width: 189px;
+        height: 42px; }
+
+body img#img_fondo5_1 {
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  top: 0; }
+
+body img#img_fondo5_2 {
+  display: none; }
+
+body main#container_formulario {
+  display: flex;
+  justify-content: center; }
+  body main#container_formulario div#main_contacto {
+    background-color: #4a4a4ad3;
+    border: solid 3px #939393;
+    width: 90%;
+    padding: 1rem; }
+    body main#container_formulario div#main_contacto form fieldset legend.titulo2 {
+      color: #FFEA1F;
+      font-family: 'Cinzel';
+      font-style: normal;
+      font-weight: 578;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 0.7rem;
+      margin-bottom: 0.5rem; }
+    body main#container_formulario div#main_contacto form fieldset label.subtitulo_form {
+      color: #FFEA1F;
+      font-family: 'Arsenal', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      padding-bottom: 1rem; }
+    body main#container_formulario div#main_contacto form fieldset input.espacio_para_escribir {
+      width: 90%;
+      height: 100px;
+      margin-bottom: 1rem;
+      background-color: #4a4a4ad3;
+      border: solid 1px #939393; }
+    body main#container_formulario div#main_contacto form fieldset input.espacio_para_escribir2 {
+      width: 90%;
+      margin-bottom: 1rem;
+      background-color: #4a4a4ad3;
+      border: solid 1px #939393; }
+    body main#container_formulario div#main_contacto form fieldset input.boton_form {
+      font-family: 'Cinzel';
+      font-style: normal;
+      font-weight: 578;
+      font-size: 1rem;
+      background-color: #FFEA1F;
+      width: 6rem; }
+
+/*medias queries*/
+@media screen and (min-width: 992px) {
+  body header#arriba nav div.container .estilo_list_nav {
     position: relative;
-    bottom: 0;
-    width: 100%;
-    z-index: 2;
-    background-color: #201F1F;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 16px;
-    text-transform: uppercase;
-    font-family: 'Arsenal', sans-serif;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-.img_redes {
-    width: 2rem;
-    margin-left: 0.3rem;
-    margin-bottom: 1rem;
-    box-shadow: 2px 2px 5px #FFEA1F;
-    border-radius: 3px;
-    animation-name: anim_icon_redes;
-    animation-iteration-count: infinite;
-    animation-duration: 1.5s;
-}
-@keyframes anim_icon_redes {
-    0% {width: 2rem;}
-    50% {width: 2.1rem;}
-    100% {width: 2rem;}
-}
-
-/*IMAGENES DE FONDO MOBILE*/
-#fondoImg3{
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    opacity: 80%;
-}
-#fondoImg2 {
-    z-index: -1;
-    position: absolute;
-    top: 105px;
-    width: 100%;
-}
-#fondoImg_mobile {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    opacity: 80%;
-}
-#fondoImg_mobile2 {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    opacity: 80%;
-}
-#fondoImg {
-    display: none;
-}
-
-#fondoImg1 {
-    display: none;
-}
-
-#img_fondo5_1 {
-    z-index: -1;
-    position: absolute;
-    width: 100vw;
-    top: 0;
-}
-#img_fondo5_2 {
-    display: none;
-}
-
-@media screen and (min-width: 700px) {
-    /*ESTILOS DEL CONTENIDO*/
-    #fondoImg {
-        display: block;
-        z-index: -1;
-        position: absolute;
-        right: 0;
-        height: 85%;
-    }
-    #fondoImg_mobile {
-        display: none;
-    }
-    #img_fondo5_1 {
-        display: inline-block;
-        z-index: -1;
-        position: absolute;
-        width: 50%;
-        top: 7rem;
-        opacity: 80%;
-    }
-    #img_fondo5_2 {
-        display: inline-block;
-        z-index: -1;
-        position: absolute;
-        width: 50%;
-        right: 0;
-        top: 7rem;
-        opacity: 80%;
-    }
-    /*INFO DE PROYECTO*/
-    .container_info_pelis {
-        width: 55%;
-        margin-left: 1rem;
-    }
-    .infoProyecto {
-        width: 50%;
-    }
-    #section_1 {
-        margin-top: 0;
-    }
-    main {
-        margin-top: 9rem;
-    }
-    .container_peliculas {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    .titulo {
-        text-align: center;
-    }
-    .img {
-        width: 10rem;
-    }
-}
+    margin-top: 0.5rem;
+    background-color: transparent; }
+  body main div#main_contacto {
+    width: 35%;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
 
 @media screen and (min-width: 740px) {
-    /*ESTILOS ENCABEZADO*/
-    #logo_principal_index {
-        display: inline;
-        max-width: 18rem;
-        position: absolute;
-        margin-left: 1rem;
-    }
-    #logo_principal_desktop {
-        display: none;
-    }
-}
+  body img#logo_principal_index {
+    display: inline;
+    max-width: 18rem;
+    position: absolute;
+    margin-left: 1rem; }
+  body a img#logo_principal_desktop {
+    display: none; } }
 
-@media screen and (min-width: 992px) {
-    .estilo_list_nav {
-        position: relative;
-        margin-top: 0.5rem;
-    }
-    .fondo_despleglable {
-        background-color: transparent;
-    }
-    #main_contacto {
-        width: 35%;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
+@media screen and (min-width: 700px) {
+  body img#fondoImg {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    height: 85%; }
+  body img#fondoImg_mobile {
+    display: none; }
+  body img#img_fondo5_1 {
+    display: inline-block;
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    top: 7rem;
+    opacity: 80%; }
+  body img#img_fondo5_2 {
+    display: inline-block;
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 7rem;
+    opacity: 80%; }
+  body main.infoProyecto {
+    width: 50%; }
+    body main.infoProyecto section#section_1 {
+      margin-top: 0; }
+  main {
+    margin-top: 9rem; }
+  body main article section.container_peliculas {
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    body main article section.container_peliculas div.container_info_pelis {
+      width: 55%;
+      margin-left: 1rem; }
+  body main article section.container div img.img {
+    width: 10rem; } }
+
+/* GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+  html main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem; }
+  html body {
+    background-color: black; }
+  html body::-webkit-scrollbar {
+    width: 15px; }
+  html body::-webkit-scrollbar-track {
+    background: #201F1F; }
+  html body::-webkit-scrollbar-thumb {
+    background-color: #c8b617;
+    border-radius: 8px; }

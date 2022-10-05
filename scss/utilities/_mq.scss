@@ -1,0 +1,79 @@
+//variables
+$desktop: 992px;
+$tablet: 740px;
+$tabletXS: 700px;
+
+/*medias queries*/
+@media screen and (min-width: $desktop) {
+    body header#arriba nav  div.container .estilo_list_nav {
+        position: relative;
+        margin-top: 0.5rem;
+        background-color: transparent;
+    }
+    body main div#main_contacto {
+        width: 35%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media screen and (min-width: $tablet) {
+    body img#logo_principal_index {
+        display: inline;
+        max-width: 18rem;
+        position: absolute;
+        margin-left: 1rem;
+    }
+    body a img#logo_principal_desktop {
+        display: none;
+    }
+}
+@media screen and (min-width: $tabletXS) {
+    body img#fondoImg {
+        display: block;
+        z-index: -1;
+        position: absolute;
+        right: 0;
+        height: 85%;
+    }
+    body img#fondoImg_mobile {
+        display: none;
+    }
+    body img#img_fondo5_1 {
+        display: inline-block;
+        z-index: -1;
+        position: absolute;
+        width: 50%;
+        top: 7rem;
+        opacity: 80%;
+    }
+    body img#img_fondo5_2 {
+        display: inline-block;
+        z-index: -1;
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: 7rem;
+        opacity: 80%;
+    }
+    //info del proyecto
+    body main.infoProyecto {
+        width: 50%;
+        section#section_1 {
+            margin-top: 0;
+        }
+    }
+    main {
+        margin-top: 9rem;
+    }
+    body main article section.container_peliculas {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        div.container_info_pelis {
+            width: 55%;
+            margin-left: 1rem;
+        }
+    }
+    body main article section.container div img.img {
+        width: 10rem;
+    }
+}
