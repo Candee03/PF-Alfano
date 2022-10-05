@@ -15,7 +15,6 @@
     box-sizing: border-box;
 }
 html {
-    height: 100%;
     main {
         display: flex;
         flex-direction: column;
@@ -26,6 +25,7 @@ html {
     //barra de scroll
     body {
         background-color: black;
+        height: 100vh;
     }
     body::-webkit-scrollbar {
         width: 15px;

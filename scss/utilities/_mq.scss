@@ -1,9 +1,19 @@
 //variables
+$desktopXS: 1140px;
 $desktop: 992px;
-$tablet: 740px;
-$tabletXS: 700px;
+$tabletXS: 740px;
+$tablet: 700px;
 
 /*medias queries*/
+@media screen and (min-width: $desktopXS ) {
+    body {
+        main.infoProyecto {
+            section#section_1 {
+                width: 30rem;
+            }
+        }
+    }
+}
 @media screen and (min-width: $desktop) {
     body header#arriba nav  div.container .estilo_list_nav {
         position: relative;
@@ -15,19 +25,6 @@ $tabletXS: 700px;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-}
-@media screen and (min-width: $tablet) {
-    body img#logo_principal_index {
-        display: inline;
-        max-width: 18rem;
-        position: absolute;
-        margin-left: 1rem;
-    }
-    body a img#logo_principal_desktop {
-        display: none;
-    }
-}
-@media screen and (min-width: $tabletXS) {
     body img#fondoImg {
         display: block;
         z-index: -1;
@@ -38,11 +35,32 @@ $tabletXS: 700px;
     body img#fondoImg_mobile {
         display: none;
     }
+}
+@media screen and (min-width: $tabletXS) {
+    body img#logo_principal_index {
+        display: inline;
+        max-width: 18rem;
+        position: absolute;
+        margin-left: 1rem;
+    }
+    body a img#logo_principal_desktop {
+        display: none;
+    }
+}
+@media screen and (min-width: $tablet) {
+    body {
+        main#container_formulario {
+            div#main_contacto {
+                width: 40rem;
+            }
+        }
+    }
     body img#img_fondo5_1 {
         display: inline-block;
         z-index: -1;
         position: absolute;
-        width: 50%;
+        max-height: 85vh;
+        width: 48vw;
         top: 7rem;
         opacity: 80%;
     }
@@ -50,7 +68,8 @@ $tabletXS: 700px;
         display: inline-block;
         z-index: -1;
         position: absolute;
-        width: 50%;
+        max-height: 85vh;
+        width: 48vw;
         right: 0;
         top: 7rem;
         opacity: 80%;

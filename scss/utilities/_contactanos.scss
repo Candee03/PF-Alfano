@@ -53,13 +53,15 @@ body {
                         background-color: #4a4a4ad3;
                         border: solid 1px #939393;
                     }
-                    input.boton_form {
-                        font-family: 'Cinzel';
-                        font-style: normal;
-                        font-weight: 578;
-                        font-size: 1rem;
-                        background-color: #FFEA1F;
-                        width: 6rem;
+                    div {
+                        input.boton_form {
+                            font-family: 'Cinzel';
+                            font-style: normal;
+                            font-weight: 578;
+                            font-size: 1rem;
+                            background-color: #FFEA1F;
+                            width: 6rem;
+                        }
                     }
                 }
             }
