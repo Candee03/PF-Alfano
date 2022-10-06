@@ -16,7 +16,7 @@ body {
                 @include titulo(1.5rem, 1.5rem);
             }
             section.container_peliculas {
-                width: 90%;
+                width: 100%;
                 display: flex;
                 margin: 0.7rem;
                 flex-wrap: wrap;
@@ -24,7 +24,7 @@ body {
                 div {
                     iframe.pelicula_trailer {
                         width: 100%;
-                        height: 80%;
+                        height: 100%;
                         position: relative;
                     }
                 }

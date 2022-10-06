@@ -1,12 +1,28 @@
 //variables
+$extraLarge: 1380px;
 $desktopXS: 1140px;
 $desktop: 992px;
 $tabletXS: 740px;
 $tablet: 700px;
 
 /*medias queries*/
+@media screen and (min-width: $extraLarge ) {
+    body {
+            main.infoProyecto {
+                margin: 3rem;
+                height: calc(100% - 259px);
+        }
+        footer.pieDePagina {
+            margin-top: 1.2rem;
+        }
+    }
+}
 @media screen and (min-width: $desktopXS ) {
     body {
+        img#fondoImg {
+            width: 65%;
+            max-width: 1056px;
+        }
         main.infoProyecto {
             section#section_1 {
                 width: 30rem;
@@ -30,13 +46,16 @@ $tablet: 700px;
         z-index: -1;
         position: absolute;
         right: 0;
-        height: 85%;
+        width: 100%;
     }
     body img#fondoImg_mobile {
         display: none;
     }
 }
 @media screen and (min-width: $tabletXS) {
+    body img#fondoImg_mobile {
+        max-width: 980px;
+    }
     body img#logo_principal_index {
         display: inline;
         max-width: 18rem;
@@ -46,6 +65,14 @@ $tablet: 700px;
     body a img#logo_principal_desktop {
         display: none;
     }
+    body main article section.container_peliculas {
+        flex-wrap: nowrap;
+        justify-content:space-around;
+        div.container_info_pelis {
+            width: 50%;
+            margin-left: 1rem;
+        }
+    }
 }
 @media screen and (min-width: $tablet) {
     body {
@@ -54,13 +81,22 @@ $tablet: 700px;
                 width: 40rem;
             }
         }
+        footer.pieDePagina {
+            a {
+                img.img_irArriba {
+                    width: 4.5rem;
+                    right: 1.5rem;
+                }
+            }
+
+        }
     }
     body img#img_fondo5_1 {
         display: inline-block;
         z-index: -1;
         position: absolute;
-        max-height: 85vh;
-        width: 48vw;
+        max-width: 758px;
+        width: 50vw;
         top: 7rem;
         opacity: 80%;
     }
@@ -68,10 +104,9 @@ $tablet: 700px;
         display: inline-block;
         z-index: -1;
         position: absolute;
-        max-height: 85vh;
-        width: 48vw;
+        max-width: 758px;
+        width: 50vw;
         right: 0;
-        top: 7rem;
         opacity: 80%;
     }
     //info del proyecto
@@ -84,15 +119,13 @@ $tablet: 700px;
     main {
         margin-top: 9rem;
     }
-    body main article section.container_peliculas {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        div.container_info_pelis {
-            width: 55%;
-            margin-left: 1rem;
-        }
-    }
-    body main article section.container div img.img {
+    main article section.container div img.img {
         width: 10rem;
+    }
+    main article section.container_peliculas {
+        div.container_info_pelis {
+            width: 45%;
+            margin-left: 0.5rem;
+        }
     }
 }

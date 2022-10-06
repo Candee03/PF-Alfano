@@ -2,13 +2,13 @@ header#arriba {
   display: flex;
   justify-content: flex-end;
   background-color: #201F1F;
-  height: 7rem;
+  height: 7.25rem;
   align-items: center; }
   header#arriba nav div.container {
     flex-direction: row-reverse;
     flex-wrap: unset !important; }
     header#arriba nav div.container .estiloDeBoton {
-      background-color: #4A4A4A;
+      background-color: #4a4a4ad3;
       position: absolute;
       border: 2px solid #939393;
       margin-top: 3rem; }
@@ -104,33 +104,34 @@ footer.pieDePagina {
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem; }
+  margin-top: 7rem; }
   footer.pieDePagina a img.img_redes {
     width: 2rem;
     margin-left: 0.3rem;
     margin-bottom: 1rem;
     border-radius: 3px; }
   footer.pieDePagina a img.img_irArriba {
-    width: 4rem;
     position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+    width: 3rem;
+    right: 0.5rem;
+    bottom: 2rem;
     animation-name: anim_icon_redes;
     animation-iteration-count: infinite;
     animation-duration: 1.8s; }
 
 @keyframes anim_icon_redes {
   0% {
-    bottom: 1rem; }
+    bottom: 2rem; }
   50% {
-    bottom: 1.2rem; }
+    bottom: 2.5rem; }
   100% {
-    bottom: 1rem; } }
+    bottom: 2rem; } }
 
 body img#fondoImg_mobile2 {
   z-index: -1;
   position: absolute;
   width: 100%;
+  max-width: 2290px;
   opacity: 80%; }
 
 body main article.containerSection {
@@ -194,14 +195,14 @@ body main article.containerSection {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; }
   body main article.containerSection section.container_peliculas {
-    width: 90%;
+    width: 100%;
     display: flex;
     margin: 0.7rem;
     flex-wrap: wrap;
     align-items: center; }
     body main article.containerSection section.container_peliculas div iframe.pelicula_trailer {
       width: 100%;
-      height: 80%;
+      height: 100%;
       position: relative; }
     body main article.containerSection section.container_peliculas div.container_info_pelis {
       margin-top: 0.5rem; }
@@ -303,17 +304,15 @@ body main#container_formulario {
       font-size: 24px;
       line-height: 32px;
       padding-bottom: 1rem; }
-    body main#container_formulario div#main_contacto form fieldset input.espacio_para_escribir {
-      width: 90%;
+    body main#container_formulario div#main_contacto form fieldset input.espacio_para_escribir, body main#container_formulario div#main_contacto form fieldset textarea.espacio_para_escribir2 {
+      width: 95%;
+      height: 70px;
+      margin-bottom: 1rem;
+      background-color: #4a4a4ad3;
+      border: solid 1px #939393; }
+    body main#container_formulario div#main_contacto form fieldset textarea.espacio_para_escribir2 {
       height: 100px;
-      margin-bottom: 1rem;
-      background-color: #4a4a4ad3;
-      border: solid 1px #939393; }
-    body main#container_formulario div#main_contacto form fieldset input.espacio_para_escribir2 {
-      width: 90%;
-      margin-bottom: 1rem;
-      background-color: #4a4a4ad3;
-      border: solid 1px #939393; }
+      resize: vertical; }
     body main#container_formulario div#main_contacto form fieldset div input.boton_form {
       font-family: 'Cinzel';
       font-style: normal;
@@ -323,7 +322,17 @@ body main#container_formulario {
       width: 6rem; }
 
 /*medias queries*/
+@media screen and (min-width: 1380px) {
+  body main.infoProyecto {
+    margin: 3rem;
+    height: calc(100% - 259px); }
+  body footer.pieDePagina {
+    margin-top: 1.2rem; } }
+
 @media screen and (min-width: 1140px) {
+  body img#fondoImg {
+    width: 65%;
+    max-width: 1056px; }
   body main.infoProyecto section#section_1 {
     width: 30rem; } }
 
@@ -341,38 +350,48 @@ body main#container_formulario {
     z-index: -1;
     position: absolute;
     right: 0;
-    height: 85%; }
+    width: 100%; }
   body img#fondoImg_mobile {
     display: none; } }
 
 @media screen and (min-width: 740px) {
+  body img#fondoImg_mobile {
+    max-width: 980px; }
   body img#logo_principal_index {
     display: inline;
     max-width: 18rem;
     position: absolute;
     margin-left: 1rem; }
   body a img#logo_principal_desktop {
-    display: none; } }
+    display: none; }
+  body main article section.container_peliculas {
+    flex-wrap: nowrap;
+    justify-content: space-around; }
+    body main article section.container_peliculas div.container_info_pelis {
+      width: 50%;
+      margin-left: 1rem; } }
 
 @media screen and (min-width: 700px) {
   body main#container_formulario div#main_contacto {
     width: 40rem; }
+  body footer.pieDePagina a img.img_irArriba {
+    width: 4.5rem;
+    right: 1.5rem; }
   body img#img_fondo5_1 {
     display: inline-block;
     z-index: -1;
     position: absolute;
-    max-height: 85vh;
-    width: 48vw;
+    max-width: 758px;
+    width: 50vw;
     top: 7rem;
     opacity: 80%; }
   body img#img_fondo5_2 {
     display: inline-block;
     z-index: -1;
     position: absolute;
-    max-height: 85vh;
-    width: 48vw;
+    max-width: 758px;
+    width: 50vw;
     right: 0;
-    top: 7rem;
     opacity: 80%; }
   body main.infoProyecto {
     width: 50%; }
@@ -380,14 +399,11 @@ body main#container_formulario {
       margin-top: 0; }
   main {
     margin-top: 9rem; }
-  body main article section.container_peliculas {
-    flex-wrap: nowrap;
-    justify-content: space-between; }
-    body main article section.container_peliculas div.container_info_pelis {
-      width: 55%;
-      margin-left: 1rem; }
-  body main article section.container div img.img {
-    width: 10rem; } }
+  main article section.container div img.img {
+    width: 10rem; }
+  main article section.container_peliculas div.container_info_pelis {
+    width: 45%;
+    margin-left: 0.5rem; } }
 
 /* GENERALES*/
 * {

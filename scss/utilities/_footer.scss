@@ -15,7 +15,7 @@ footer.pieDePagina {
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 7rem;
     a {
         img.img_redes {
             width: 2rem;
@@ -26,10 +26,10 @@ footer.pieDePagina {
     }
     a {
         img.img_irArriba {
-            width: 4rem;
             position: absolute;
-            right: 1rem;
-            bottom: 1rem;
+            width: 3rem;
+            right: 0.5rem;
+            bottom: 2rem;
             animation-name: anim_icon_redes;
             animation-iteration-count: infinite;
             animation-duration: 1.8s;
@@ -38,7 +38,7 @@ footer.pieDePagina {
 }
 
 @keyframes anim_icon_redes {
-    0% {bottom: 1rem;}
-    50% {bottom: 1.2rem;}
-    100% {bottom: 1rem;}
+    0% {bottom: 2rem;}
+    50% {bottom: 2.5rem;}
+    100% {bottom: 2rem;}
 }

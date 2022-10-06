@@ -15,14 +15,14 @@ body {
         display: flex;
         justify-content: center;
         div#main_contacto {
-            background-color: #4a4a4ad3;
-            border: solid 3px #939393;
+            background-color: $color2;
+            border: solid 3px $color3;
             width: 90%;
             padding: 1rem;
             form {
                 fieldset {
                     legend.titulo2 {
-                        color: #FFEA1F;
+                        color: $color1;
                         font-family: 'Cinzel';
                         font-style: normal;
                         font-weight: 578;
@@ -32,7 +32,7 @@ body {
                         margin-bottom: 0.5rem;
                     }
                     label.subtitulo_form {
-                        color: #FFEA1F;
+                        color: $color1;
                         font-family:'Arsenal', sans-serif;
                         font-style: normal;
                         font-weight: 400;
@@ -41,17 +41,16 @@ body {
                         padding-bottom: 1rem;
                     }
                     input.espacio_para_escribir {
-                        width: 90%;
-                        height: 100px;
+                        width: 95%;
+                        height: 70px;
                         margin-bottom: 1rem;
-                        background-color: #4a4a4ad3;
-                        border: solid 1px #939393;
+                        background-color: $color2;
+                        border: solid 1px $color3;
                     }
-                    input.espacio_para_escribir2 {
-                        width: 90%;
-                        margin-bottom: 1rem;
-                        background-color: #4a4a4ad3;
-                        border: solid 1px #939393;
+                    textarea.espacio_para_escribir2 {
+                        @extend input.espacio_para_escribir;
+                        height: 100px;
+                        resize: vertical;
                     }
                     div {
                         input.boton_form {
@@ -59,7 +58,7 @@ body {
                             font-style: normal;
                             font-weight: 578;
                             font-size: 1rem;
-                            background-color: #FFEA1F;
+                            background-color: $color1;
                             width: 6rem;
                         }
                     }

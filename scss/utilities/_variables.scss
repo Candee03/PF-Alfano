@@ -1,7 +1,13 @@
+//variables
+$color1: #FFEA1F;
+$color2: #4a4a4ad3;
+$color3: #939393;
+
+
 //sections
 @mixin estilo_section {
-    background-color: #4a4a4ad3;
-    border: solid 3px #939393;
+    background-color: $color2;
+    border: solid 3px $color3;
 }
 @mixin containerSection {
     justify-content: center;
@@ -18,7 +24,7 @@
 
 //estilos textos
 @mixin texto_principal {
-    color: #FFEA1F;
+    color: $color1;
     font-family:'Arsenal', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -28,7 +34,7 @@
     padding-bottom: 1rem;
 }
 @mixin titulo ($marginT, $marginB) {
-    color: #FFEA1F;
+    color: $color1;
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 578;
