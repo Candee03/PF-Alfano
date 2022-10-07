@@ -1,79 +1,10 @@
 //variables
-$extraLarge: 1380px;
-$desktopXS: 1140px;
+$desktopXS: 1350px;
 $desktop: 992px;
 $tabletXS: 740px;
 $tablet: 700px;
 
-/*medias queries*/
-@media screen and (min-width: $extraLarge ) {
-    body {
-            main.infoProyecto {
-                margin: 3rem;
-                height: calc(100% - 259px);
-        }
-        footer.pieDePagina {
-            margin-top: 1.2rem;
-        }
-    }
-}
-@media screen and (min-width: $desktopXS ) {
-    body {
-        img#fondoImg {
-            width: 65%;
-            max-width: 1056px;
-        }
-        main.infoProyecto {
-            section#section_1 {
-                width: 30rem;
-            }
-        }
-    }
-}
-@media screen and (min-width: $desktop) {
-    body header#arriba nav  div.container .estilo_list_nav {
-        position: relative;
-        margin-top: 0.5rem;
-        background-color: transparent;
-    }
-    body main div#main_contacto {
-        width: 35%;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    body img#fondoImg {
-        display: block;
-        z-index: -1;
-        position: absolute;
-        right: 0;
-        width: 100%;
-    }
-    body img#fondoImg_mobile {
-        display: none;
-    }
-}
-@media screen and (min-width: $tabletXS) {
-    body img#fondoImg_mobile {
-        max-width: 980px;
-    }
-    body img#logo_principal_index {
-        display: inline;
-        max-width: 18rem;
-        position: absolute;
-        margin-left: 1rem;
-    }
-    body a img#logo_principal_desktop {
-        display: none;
-    }
-    body main article section.container_peliculas {
-        flex-wrap: nowrap;
-        justify-content:space-around;
-        div.container_info_pelis {
-            width: 50%;
-            margin-left: 1rem;
-        }
-    }
-}
+
 @media screen and (min-width: $tablet) {
     body {
         main#container_formulario {
@@ -88,44 +19,126 @@ $tablet: 700px;
                     right: 1.5rem;
                 }
             }
-
         }
-    }
-    body img#img_fondo5_1 {
-        display: inline-block;
-        z-index: -1;
-        position: absolute;
-        max-width: 758px;
-        width: 50vw;
-        top: 7rem;
-        opacity: 80%;
-    }
-    body img#img_fondo5_2 {
-        display: inline-block;
-        z-index: -1;
-        position: absolute;
-        max-width: 758px;
-        width: 50vw;
-        right: 0;
-        opacity: 80%;
+        img#img_fondo5_2 {
+            display: inline-block;
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            opacity: 80%;
+        }
+        img#img_fondo5_1 {
+            display: none;
+        }
     }
     //info del proyecto
-    body main.infoProyecto {
-        width: 50%;
-        section#section_1 {
-            margin-top: 0;
+    body {
+        main article {
+            section.container div img.img {
+                width: 10rem;
+            }
+            section.container_peliculas {
+                div.container_info_pelis {
+                width: 45%;
+                margin-left: 0.5rem;
+                }
+            }
+        }   
+    }
+}
+
+@media screen and (min-width: $tabletXS) {
+    body {
+        img#fondoImg_mobile {
+            max-width: 980px;
+        }
+        main#section3 article section.container_peliculas {
+            flex-wrap: nowrap;
+            justify-content:space-around;
+            div.container_info_pelis {
+                width: 50%;
+                margin-left: 1rem;
+            }
         }
     }
-    main {
-        margin-top: 9rem;
+}
+
+@media screen and (min-width: $desktop) {
+    body {
+        main.infoProyecto {
+            margin-top: 2rem;
+            width: 40%;
+        }
+        main#section2, main#section3 {
+            @include margenDeMain_desktop;
+        }
+        main {
+            section.estilo_section#section_4 {
+                @include margenDeMain_desktop;
+            }
+        }
+        //ENCABEZADO
+        header#arriba nav  div.container .estilo_list_nav {
+            position: relative;
+            margin-top: 0.5rem;
+            background-color: transparent;
+        }
+        //PAGINA DE CONTACTO
+        main div#main_contacto {
+            width: 35%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        //IMAGENES DE FONDO
+        img#fondoImg {
+            display: inline-block;
+            z-index: -1;
+            position: absolute;
+            right: 0;
+            height: 630px;
+        }
+        img#fondoImg_mobile {
+            display: none;
+        }
+        img#fondoImg_mobile2 {
+            position: absolute;
+        }
+        img#fondoImg2 {
+            position: absolute;
+        }
+        img#fondoImg3 {
+            position: absolute;
+        }
     }
-    main article section.container div img.img {
-        width: 10rem;
+}
+
+@media screen and (min-width: $desktopXS) {
+    body {
+        main.infoProyecto {
+            height: calc(100% - 339px) ;
+        }
+        img#fondoImg {
+            height: calc(100% - 116px) ;
+        }
+        footer.pieDePagina2 {
+            margin-top: 5rem;
+        }
     }
-    main article section.container_peliculas {
-        div.container_info_pelis {
-            width: 45%;
-            margin-left: 0.5rem;
+}
+@media screen and (min-height: 740px) {
+    body {
+        main#container_formulario {
+            margin-top: 5rem;
+            height: calc(100% - 339px) ;
+        }
+        footer.pieDePagina2 {
+            margin-top: 7rem;
+        }
+        main.infoProyecto {
+            height: calc(100% - 339px) ;
+        }
+        img#fondoImg, img#img_fondo5_2 {
+            height: calc(100% - 116px) ;
         }
     }
 }

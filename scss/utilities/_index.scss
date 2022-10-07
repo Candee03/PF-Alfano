@@ -2,31 +2,21 @@
 @import "variables.scss";
 
 body {
-    a {
-        img#logo_principal_desktop {
-            width: 12rem;
-            position: absolute;
-            margin-left: 1rem;
-        }
-    }
-    img#logo_principal_index {
-        display: none;
-    }
     img#fondoImg {
         display: none;
     }
     img#fondoImg_mobile {
         z-index: -1;
-        position: absolute;
         width: 100%;
         opacity: 80%;
     }
     main.infoProyecto {
         section#section_1 {
+            z-index: 2;
             padding-top: 1rem;
             padding-bottom: 1rem;
-            margin-top: 6rem;
             width: 80%;
+            @include margenDeMain_mobile;
             @include estilo_section;
             h1 {
                 @include titulo(0rem, 1rem);

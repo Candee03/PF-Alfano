@@ -3,12 +3,13 @@
 
 body {
     img#fondoImg2 {
+        opacity: 80%;
         z-index: -1;
-        position: absolute;
         top: 105px;
         width: 100%;
     }
-    main {
+    main#section3 {
+        @include margenDeMain_mobile;
         article.containerSection {
             @include containerSection;
             @include estilo_section;
@@ -48,6 +49,7 @@ body {
                         font-size: 20px;
                         line-height: 32px;
                         text-align: left;
+                        letter-spacing: 0.7px;
                     }
                 }
             }

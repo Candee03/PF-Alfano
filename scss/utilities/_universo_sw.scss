@@ -4,12 +4,12 @@
 body {
     img#fondoImg_mobile2 {
         z-index: -1;
-        position: absolute;
         width: 100%;
         max-width: 2290px;
-        opacity: 80%;
+        opacity: 90%;
     }
-    main {
+    main#section2 {
+        @include margenDeMain_mobile;
         article.containerSection {
             @include containerSection;
             @include estilo_section;

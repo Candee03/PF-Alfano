@@ -4,12 +4,12 @@
 body {
     img#fondoImg3 {
         width: 100%;
-        position: absolute;
         z-index: -1;
         opacity: 80%;
     }
     main {
         section.estilo_section#section_4 {
+            @include margenDeMain_mobile;
             width: 80%;
             @include estilo_section;
             h1 {

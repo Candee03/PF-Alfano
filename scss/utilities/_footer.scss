@@ -36,6 +36,10 @@ footer.pieDePagina {
         }
     }
 }
+footer.pieDePagina2 {
+    @extend footer.pieDePagina;
+    margin-top: 10rem;
+}
 
 @keyframes anim_icon_redes {
     0% {bottom: 2rem;}
