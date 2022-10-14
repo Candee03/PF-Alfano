@@ -4,18 +4,22 @@
 header#arriba {
     display: flex;
     justify-content: flex-end;
-    background-color: #201F1F;
+    background-color: $color_foot_head;
+    @include sombra_de_foot_head (-7px);
     height: 7.25rem;
     align-items: center;
     nav {
         div.container {
             flex-direction: row-reverse;
             flex-wrap:unset !important;
-            .estiloDeBoton {
+            button.estiloDeBoton {
                 background-color: $color2;
                 position: absolute;
                 border: 2px solid $color3;
                 margin-top: 3rem;
+                span.navbar-toggler-icon {
+                    background-image: url("../img_logos/lineas_navbar.png");
+                }
             }
             .estilo_list_nav {
                 z-index: 2;

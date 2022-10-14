@@ -2,14 +2,20 @@
 $color1: #FFEA1F;
 $color2: #4a4a4ad3;
 $color3: #939393;
+$color_foot_head: black;
 
+//#303030 
+
+//estlo de contenedores
+@mixin sombra_de_foot_head ($y) {
+    box-shadow: 0px $y 30px 5px $color_foot_head;
+}
 @mixin margenDeMain_mobile {
     margin-top: 2rem;
 }
 @mixin margenDeMain_desktop {
     margin-top: 12rem;
 }
-//sections
 @mixin estilo_section {
     background-color: $color2;
     border: solid 3px $color3;

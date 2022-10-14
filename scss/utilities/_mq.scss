@@ -4,7 +4,7 @@ $desktop: 992px;
 $tabletXS: 740px;
 $tablet: 700px;
 
-
+//medias queries para tablets
 @media screen and (min-width: $tablet) {
     body {
         main#container_formulario {
@@ -36,7 +36,6 @@ $tablet: 700px;
         }   
     }
 }
-
 @media screen and (min-width: $tabletXS) {
     body {
         img#fondoImg_mobile {
@@ -53,6 +52,7 @@ $tablet: 700px;
     }
 }
 
+//media queries para escritorio
 @media screen and (min-width: $desktop) {
     body {
         main.infoProyecto {
@@ -111,7 +111,6 @@ $tablet: 700px;
         }
     }
 }
-
 @media screen and (min-width: $desktopXS) {
     body {
         main.infoProyecto {
@@ -125,6 +124,8 @@ $tablet: 700px;
         }
     }
 }
+
+//media queries para pantallas extra grandes
 @media screen and (min-height: 710px) and (min-width: $desktop) {
     body {
         main#container_formulario {

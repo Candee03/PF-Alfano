@@ -5,7 +5,8 @@ footer.pieDePagina {
     bottom: 0;
     width: 100%;
     z-index: 2;
-    background-color: #201F1F;
+    background-color: $color_foot_head;
+    @include sombra_de_foot_head (7px);
     font-weight: 400;
     font-size: 15px;
     line-height: 16px;
@@ -40,7 +41,15 @@ footer.pieDePagina2 {
     @extend footer.pieDePagina;
     margin-top: 10rem;
 }
+div#cont_redesDeContacto {
+    position: absolute;
+    a img{
+        width: 2rem;
+        margin-bottom: 10rem;
+    }
+}
 
+//animacion
 @keyframes anim_icon_redes {
     0% {bottom: 2rem;}
     50% {bottom: 2.5rem;}
