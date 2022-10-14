@@ -302,7 +302,7 @@ body main#container_formulario {
       font-weight: 400;
       font-size: 24px;
       line-height: 32px;
-      padding-bottom: 1rem; }
+      padding-bottom: 0.5rem; }
     body main#container_formulario div#main_contacto form fieldset input.espacio_para_escribir, body main#container_formulario div#main_contacto form fieldset textarea.espacio_para_escribir2 {
       width: 95%;
       height: 70px;
@@ -326,14 +326,6 @@ body main#container_formulario {
   body footer.pieDePagina a img.img_irArriba, body footer.pieDePagina2 a img.img_irArriba {
     width: 4.5rem;
     right: 1.5rem; }
-  body img#img_fondo5_2 {
-    display: inline-block;
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    opacity: 80%; }
-  body img#img_fondo5_1 {
-    display: none; }
   body main article section.container div img.img {
     width: 10rem; }
   body main article section.container_peliculas div.container_info_pelis {
@@ -379,7 +371,15 @@ body main#container_formulario {
   body img#fondoImg2 {
     position: absolute; }
   body img#fondoImg3 {
-    position: absolute; } }
+    position: absolute; }
+  body img#img_fondo5_2 {
+    display: inline-block;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    opacity: 80%; }
+  body img#img_fondo5_1 {
+    display: none; } }
 
 @media screen and (min-width: 1350px) {
   body main.infoProyecto {
@@ -389,7 +389,7 @@ body main#container_formulario {
   body footer.pieDePagina2 {
     margin-top: 5rem; } }
 
-@media screen and (min-height: 740px) {
+@media screen and (min-height: 710px) and (min-width: 992px) {
   body main#container_formulario {
     margin-top: 5rem;
     height: calc(100% - 339px); }

@@ -20,16 +20,6 @@ $tablet: 700px;
                 }
             }
         }
-        img#img_fondo5_2 {
-            display: inline-block;
-            z-index: -1;
-            position: absolute;
-            width: 100%;
-            opacity: 80%;
-        }
-        img#img_fondo5_1 {
-            display: none;
-        }
     }
     //info del proyecto
     body {
@@ -109,6 +99,16 @@ $tablet: 700px;
         img#fondoImg3 {
             position: absolute;
         }
+        img#img_fondo5_2 {
+            display: inline-block;
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            opacity: 80%;
+        }
+        img#img_fondo5_1 {
+            display: none;
+        }
     }
 }
 
@@ -125,7 +125,7 @@ $tablet: 700px;
         }
     }
 }
-@media screen and (min-height: 740px) {
+@media screen and (min-height: 710px) and (min-width: $desktop) {
     body {
         main#container_formulario {
             margin-top: 5rem;
