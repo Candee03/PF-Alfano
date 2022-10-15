@@ -375,22 +375,16 @@ body main#container_formulario {
     position: absolute;
     right: 0;
     height: 630px; }
-  body img#fondoImg_mobile {
+  body img#fondoImg_mobile, body img#img_fondo5_1 {
     display: none; }
-  body img#fondoImg_mobile2 {
-    position: absolute; }
-  body img#fondoImg2 {
-    position: absolute; }
-  body img#fondoImg3 {
+  body img#fondoImg_mobile2, body img#fondoImg3, body img#fondoImg2 {
     position: absolute; }
   body img#img_fondo5_2 {
     display: inline-block;
     z-index: -1;
     position: absolute;
     width: 100%;
-    opacity: 80%; }
-  body img#img_fondo5_1 {
-    display: none; } }
+    opacity: 80%; } }
 
 @media screen and (min-width: 1350px) {
   body main.infoProyecto {

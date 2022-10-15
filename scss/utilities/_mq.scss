@@ -87,16 +87,10 @@ $tablet: 700px;
             right: 0;
             height: 630px;
         }
-        img#fondoImg_mobile {
+        img#fondoImg_mobile, img#img_fondo5_1  {
             display: none;
         }
-        img#fondoImg_mobile2 {
-            position: absolute;
-        }
-        img#fondoImg2 {
-            position: absolute;
-        }
-        img#fondoImg3 {
+        img#fondoImg_mobile2, img#fondoImg3, img#fondoImg2 {
             position: absolute;
         }
         img#img_fondo5_2 {
@@ -105,9 +99,6 @@ $tablet: 700px;
             position: absolute;
             width: 100%;
             opacity: 80%;
-        }
-        img#img_fondo5_1 {
-            display: none;
         }
     }
 }
