@@ -191,7 +191,7 @@ body main#section3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 85%;
+    width: 90%;
     background-color: #4a4a4ad3;
     border: solid 3px #939393; }
     body main#section3 article.containerSection h1.titulo {
@@ -314,6 +314,7 @@ body main#container_formulario {
       line-height: 32px;
       padding-bottom: 0.5rem; }
     body main#container_formulario div#main_contacto form fieldset input.espacio_para_escribir, body main#container_formulario div#main_contacto form fieldset textarea.espacio_para_escribir2 {
+      color: white;
       padding-left: 0.5rem;
       width: 95%;
       height: 70px;
@@ -347,7 +348,6 @@ body main#container_formulario {
   body img#fondoImg_mobile {
     max-width: 980px; }
   body main#section3 article section.container_peliculas {
-    flex-wrap: nowrap;
     justify-content: space-around; }
     body main#section3 article section.container_peliculas div.container_info_pelis {
       width: 50%;
